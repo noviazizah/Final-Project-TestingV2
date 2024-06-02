@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RunTests" time="476.486" tests="50" errors="0" skipped="0" failures="13">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\novia\OneDrive\Documents\Final-Project-Testing\target\test-classes;C:\Users\novia\OneDrive\Documents\Final-Project-Testing\target\classes;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0\junit-jupiter-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0\junit-jupiter-api-5.8.0.jar;C:\Users\novia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0\junit-platform-commons-1.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0\junit-jupiter-params-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0\junit-jupiter-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\novia\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\novia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\novia\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\novia\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\novia\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\novia\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\novia\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\novia\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\novia\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\novia\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-java\6.11.0\cucumber-java-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-core\6.11.0\cucumber-core-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin\6.11.0\cucumber-gherkin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.11.0\cucumber-gherkin-messages-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\novia\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-plugin\6.11.0\cucumber-plugin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\docstring\6.11.0\docstring-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\novia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-picocontainer\7.0.0\cucumber-picocontainer-7.0.0.jar;C:\Users\novia\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-junit\6.11.0\cucumber-junit-6.11.0.jar;C:\Users\novia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\novia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\novia\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.0\junit-vintage-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0\junit-platform-engine-1.8.0.jar;C:\Users\novia\.m2\repository\io\rest-assured\rest-assured\5.2.0\rest-assured-5.2.0.jar;C:\Users\novia\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\novia\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\novia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\novia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\novia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\novia\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\novia\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\novia\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\novia\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\novia\.m2\repository\io\rest-assured\json-path\5.2.0\json-path-5.2.0.jar;C:\Users\novia\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\novia\.m2\repository\io\rest-assured\rest-assured-common\5.2.0\rest-assured-common-5.2.0.jar;C:\Users\novia\.m2\repository\io\rest-assured\xml-path\5.2.0\xml-path-5.2.0.jar;C:\Users\novia\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
+    <property name="java.vm.vendor" value="OpenLogic"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openlogic.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\novia\AppData\Local\Temp\surefire8964291007171193431\surefirebooter15029396135528635308.jar C:\Users\novia\AppData\Local\Temp\surefire8964291007171193431 2024-06-03T04-44-01_829-jvmRun1 surefire1244321297759188134tmp surefire_015182216269871205999tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\novia\OneDrive\Documents\Final-Project-Testing\target\test-classes;C:\Users\novia\OneDrive\Documents\Final-Project-Testing\target\classes;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter\5.8.0\junit-jupiter-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0\junit-jupiter-api-5.8.0.jar;C:\Users\novia\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0\junit-platform-commons-1.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0\junit-jupiter-params-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0\junit-jupiter-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\novia\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\novia\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\novia\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\novia\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\novia\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\novia\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\novia\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\novia\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\novia\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\novia\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\novia\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-java\6.11.0\cucumber-java-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-core\6.11.0\cucumber-core-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin\6.11.0\cucumber-gherkin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.11.0\cucumber-gherkin-messages-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\novia\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-plugin\6.11.0\cucumber-plugin-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\docstring\6.11.0\docstring-6.11.0.jar;C:\Users\novia\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\novia\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\novia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-picocontainer\7.0.0\cucumber-picocontainer-7.0.0.jar;C:\Users\novia\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\novia\.m2\repository\io\cucumber\cucumber-junit\6.11.0\cucumber-junit-6.11.0.jar;C:\Users\novia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\novia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\novia\.m2\repository\org\junit\vintage\junit-vintage-engine\5.8.0\junit-vintage-engine-5.8.0.jar;C:\Users\novia\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0\junit-platform-engine-1.8.0.jar;C:\Users\novia\.m2\repository\io\rest-assured\rest-assured\5.2.0\rest-assured-5.2.0.jar;C:\Users\novia\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar;C:\Users\novia\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar;C:\Users\novia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\novia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\novia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\novia\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\novia\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\novia\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\novia\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\novia\.m2\repository\io\rest-assured\json-path\5.2.0\json-path-5.2.0.jar;C:\Users\novia\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar;C:\Users\novia\.m2\repository\io\rest-assured\rest-assured-common\5.2.0\rest-assured-common-5.2.0.jar;C:\Users\novia\.m2\repository\io\rest-assured\xml-path\5.2.0\xml-path-5.2.0.jar;C:\Users\novia\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\novia"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\novia\OneDrive\Documents\Final-Project-Testing"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\novia\AppData\Local\Temp\surefire8964291007171193431\surefirebooter15029396135528635308.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.19+7-adhoc..jdk11u"/>
+    <property name="user.name" value="novia"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="OpenLogic-OpenJDK"/>
+    <property name="localRepository" value="C:\Users\novia\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://techsupport.roguewave.com/"/>
+    <property name="java.io.tmpdir" value="C:\Users\novia\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.19"/>
+    <property name="user.dir" value="C:\Users\novia\OneDrive\Documents\Final-Project-Testing"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin;C:\apache-maven-3.9.2\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\xampp\php;C:\composer;C:\xampp\php-8.0.30;C:\ProgramData\ComposerSetup\bin;C:\apache-maven-3.9.2\bin;C:\Users\novia\Downloads\apache-maven-3.9.5-bin\apache-maven-3.9.5\bin;C:\Users\novia;C:\Program Files\Docker\Docker\resources\bin;C:\Gradle\gradle-8.7\bin;C:\Gradle\gradle-8.7\bin;C:\Users\novia\AppData\Local\Programs\Python\Python311\;C:\Users\novia\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\novia\AppData\Local\Microsoft\WindowsApps;C:\Users\novia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\novia\AppData\Roaming\npm;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\novia\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.4\bin;;D:\KULIAH\SEMESTER 6\PPL (PR)\SwagLabsTesting\src\test\resources\chromedriver.exe;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="OpenLogic"/>
+    <property name="java.vm.version" value="11.0.19+7-adhoc..jdk11u"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Successfully create a user with title &quot;mr&quot;" classname="RunTests" time="26.758">
+    <failure message="&#10;Expected: &lt;200&gt;&#10;     but: was &lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <400>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Successfully create a user with title "mr"                   &amp#27;[90m# src/test/resources/features/apiusercontroller/createUser.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the User API Controller&amp#27;[0m                       &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am authorized with a valid app-id &amp#27;[0m&amp#27;[32m&amp#27;[1m"665c257a4ff6ee05ceaa8edf"&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have a user payload with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"mr"&amp#27;[0m&amp#27;[32m and other required fields&amp#27;[0m  &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithTitleAndOtherRequiredFields(java.lang.String)&amp#27;[0m
+Request Payload: {
+  "title": "mr",
+  "firstName": "Alex",
+  "lastName": "Gonzales",
+  "gender": "male",
+  "email": "alex.gonzale1232s@example.com",
+  "dateOfBirth": "1990-01-01",
+  "phone": "123456789",
+  "picture": "http://example.com/picture.jpg",
+  "location": {
+    "street": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA",
+    "timezone": "+7:00"
+  }
+}
+Response Status Code: 400
+Response Body: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a POST request to create the user&amp#27;[0m                        &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive a response with the status code &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m            &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <200>
+     but: was <400>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(CreateUserSteps.java:160)
+	at âœ½.I should receive a response with the status code 200(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:10)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 30578
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:44:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717364673.343][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Successfully create a user with firstName &quot;Johnathan&quot;" classname="RunTests" time="16.581">
+    <failure message="&#10;Expected: &lt;200&gt;&#10;     but: was &lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <400>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Successfully create a user with firstName "Johnathan"                  &amp#27;[90m# src/test/resources/features/apiusercontroller/createUser.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the User API Controller&amp#27;[0m                                 &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am authorized with a valid app-id &amp#27;[0m&amp#27;[32m&amp#27;[1m"665c257a4ff6ee05ceaa8edf"&amp#27;[0m           &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have a user payload with firstName &amp#27;[0m&amp#27;[32m&amp#27;[1m"Johnathan"&amp#27;[0m&amp#27;[32m and other required fields&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithFirstNameAndOtherRequiredFields(java.lang.String)&amp#27;[0m
+Request Payload: {
+  "title": "mr",
+  "firstName": "Johnathan",
+  "lastName": "Doe",
+  "gender": "male",
+  "email": "johnathandoe461@example.com",
+  "dateOfBirth": "1985-07-15",
+  "phone": "777777777",
+  "picture": "http://example.com/picture6.jpg",
+  "location": {
+    "street": "303 Oak St",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "USA",
+    "timezone": "-7:00"
+  }
+}
+Response Status Code: 400
+Response Body: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a POST request to create the user&amp#27;[0m                                  &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive a response with the status code &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m                      &amp#27;[90m# apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <200>
+     but: was <400>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(CreateUserSteps.java:160)
+	at âœ½.I should receive a response with the status code 200(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:16)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 49270
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:44:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Fail to create a user with empty email field" classname="RunTests" time="9.579"/>
+  <testcase name="Fail to create a user with firstName exceeding max length" classname="RunTests" time="8.264"/>
+  <testcase name="Fail to create a user with invalid app-id" classname="RunTests" time="6.789"/>
+  <testcase name="Successfully delete a user with a valid and registered ID" classname="RunTests" time="7.501">
+    <failure message="&#10;Expected: &lt;200&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <404>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Successfully delete a user with a valid and registered ID                    &amp#27;[90m# src/test/resources/features/apiusercontroller/deleteUser.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the API User Controller&amp#27;[0m                                       &amp#27;[90m# apiusercontroller.stepdefs.DeleteUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have a valid app-id &amp#27;[0m&amp#27;[32m&amp#27;[1m"665b2b5479d0282f4782deae"&amp#27;[0m                               &amp#27;[90m# apiusercontroller.stepdefs.DeleteUserSteps.iHaveAValidAppId(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a DELETE request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/user/{id}"&amp#27;[0m&amp#27;[32m with user ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"60d0fe4f5311236168a109ff"&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.DeleteUserSteps.iSendADELETERequestToWithUserID(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive success with status code &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m                                   &amp#27;[90m# apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveSuccessWithStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <200>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveSuccessWithStatusCode(DeleteUserSteps.java:50)
+	at âœ½.I should receive success with status code 200(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/deleteUser.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe response should display the user id&amp#27;[0m                                          &amp#27;[90m# apiusercontroller.stepdefs.DeleteUserSteps.theResponseShouldDisplayTheUserId()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 39659
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:45:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717364728.114][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Attempt to delete a user with a valid but unregistered ID" classname="RunTests" time="8.788"/>
+  <testcase name="Attempt to delete a user with an invalid user ID" classname="RunTests" time="7.757"/>
+  <testcase name="Attempt to delete a user without setting app-id in the header" classname="RunTests" time="8.762"/>
+  <testcase name="Attempt to delete a user with an invalid app-id in the header" classname="RunTests" time="15.826"/>
+  <testcase name="Get user with a valid and registered user ID" classname="RunTests" time="7.72">
+    <failure message="&#10;Expected: &lt;200&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <404>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Get user with a valid and registered user ID                              &amp#27;[90m# src/test/resources/features/apiusercontroller/getUser.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the User API&amp#27;[0m                                               &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have a valid app-id in the header &amp#27;[0m&amp#27;[32m&amp#27;[1m"665b2b5479d0282f4782deae"&amp#27;[0m              &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAValidAppIdInTheHeader(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a GET request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/user/{id}"&amp#27;[0m&amp#27;[32m with user ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"60d0fe4f5311236168a109fa"&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive a &amp#27;[0m&amp#27;[31m&amp#27;[1m200&amp#27;[0m&amp#27;[31m status code&amp#27;[0m                                           &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <200>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)
+	at âœ½.I should receive a 200 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:9)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe response should contain the user details&amp#27;[0m                                  &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainTheUserDetails()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 27813
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:46:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Get user with a valid but unregistered user ID" classname="RunTests" time="8.654">
+    <failure message="&#10;Expected: &lt;404&gt;&#10;     but: was &lt;403&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <404>
+     but: was <403>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Get user with a valid but unregistered user ID                            &amp#27;[90m# src/test/resources/features/apiusercontroller/getUser.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the User API&amp#27;[0m                                               &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have a valid app-id in the header &amp#27;[0m&amp#27;[32m&amp#27;[1m"60d0fe4f5311236168a109fa"&amp#27;[0m              &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAValidAppIdInTheHeader(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a GET request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/user/{id}"&amp#27;[0m&amp#27;[32m with user ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"60d0fe4f5311236168a202ca"&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive a &amp#27;[0m&amp#27;[31m&amp#27;[1m404&amp#27;[0m&amp#27;[31m status code&amp#27;[0m                                           &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <404>
+     but: was <403>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)
+	at âœ½.I should receive a 404 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:15)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe response should contain an error message about &amp#27;[0m&amp#27;[36m&amp#27;[1m"RESOURCE_NOT_FOUND"&amp#27;[0m       &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 9479
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:46:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Get user with an invalid user ID" classname="RunTests" time="6.334"/>
+  <testcase name="Get user without setting app-id in the request header" classname="RunTests" time="6.476">
+    <failure message="&#10;Expected: &lt;403&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <403>
+     but: was <404>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Get user without setting app-id in the request header                     &amp#27;[90m# src/test/resources/features/apiusercontroller/getUser.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the User API&amp#27;[0m                                               &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI dont have an app-id in the header&amp#27;[0m                                         &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iDontHaveAppIdInTheHeader()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a GET request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/user/{id}"&amp#27;[0m&amp#27;[32m with user ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"60d0fe4f5311236168a109fa"&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive a &amp#27;[0m&amp#27;[31m&amp#27;[1m403&amp#27;[0m&amp#27;[31m status code&amp#27;[0m                                           &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <403>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)
+	at âœ½.I should receive a 403 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:27)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe response should contain an error message about &amp#27;[0m&amp#27;[36m&amp#27;[1m"APP_ID_MISSING"&amp#27;[0m           &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 35630
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:46:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Get user with an invalid app-id in the request header" classname="RunTests" time="7.477">
+    <failure message="&#10;Expected: &lt;403&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expected: <403>
+     but: was <404>
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Get user with an invalid app-id in the request header                     &amp#27;[90m# src/test/resources/features/apiusercontroller/getUser.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have access to the User API&amp#27;[0m                                               &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have an invalid app-id in the header &amp#27;[0m&amp#27;[32m&amp#27;[1m"662e0effbb70a725c3259220"&amp#27;[0m           &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iHaveAnInvalidAppIdInTheHeader(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send a GET request to &amp#27;[0m&amp#27;[32m&amp#27;[1m"/user/{id}"&amp#27;[0m&amp#27;[32m with user ID &amp#27;[0m&amp#27;[32m&amp#27;[1m"60d0fe4f5311236168a109fa"&amp#27;[0m &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should receive a &amp#27;[0m&amp#27;[31m&amp#27;[1m403&amp#27;[0m&amp#27;[31m status code&amp#27;[0m                                           &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 
+Expected: <403>
+     but: was <404>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)
+	at âœ½.I should receive a 403 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:33)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe response should contain an error message about &amp#27;[0m&amp#27;[36m&amp#27;[1m"APP_ID_NOT_EXIST"&amp#27;[0m         &amp#27;[90m# apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 27369
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:46:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717364805.859][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Successfully update user&apos;s title" classname="RunTests" time="9.728"/>
+  <testcase name="Successfully update user&apos;s firstName" classname="RunTests" time="8.265"/>
+  <testcase name="Successfully update user&apos;s lastName" classname="RunTests" time="8.133"/>
+  <testcase name="Successfully update user&apos;s gender" classname="RunTests" time="8.026"/>
+  <testcase name="Successfully update user&apos;s dateOfBirth" classname="RunTests" time="6.905"/>
+  <testcase name="As a user, I want to add items to the shopping cart" classname="RunTests" time="10.968"/>
+  <testcase name="As a user I want to see the contents of my shopping cart" classname="RunTests" time="10.723"/>
+  <testcase name="As a user I want to see the details of the items in my shhopping cart" classname="RunTests" time="10.147"/>
+  <testcase name="As a user, I want to remove an item from the cart from the products page" classname="RunTests" time="10.269"/>
+  <testcase name="As a user, I want to remove an item from the cart from the cart inventory page" classname="RunTests" time="8.868"/>
+  <testcase name="Checkout from the cart page" classname="RunTests" time="7.582"/>
+  <testcase name="Submit all shipping details" classname="RunTests" time="10.713"/>
+  <testcase name="First name is missing from shipping details" classname="RunTests" time="7.792"/>
+  <testcase name="Finalise checkout" classname="RunTests" time="7.364"/>
+  <testcase name="Edit shipping details from the Checkout Overview page" classname="RunTests" time="6.914"/>
+  <testcase name="As a user, I want to sort products by name {A-Z}" classname="RunTests" time="9.899"/>
+  <testcase name="As a user, I want to sort products by name {Z-A}" classname="RunTests" time="9.361"/>
+  <testcase name="As a user, I want to sort products by price {low-high}" classname="RunTests" time="8.871"/>
+  <testcase name="As a user, I want to sort products by price {high-low}" classname="RunTests" time="8.997"/>
+  <testcase name="Successful login with valid username and password" classname="RunTests" time="8.246"/>
+  <testcase name="Unsuccessful login with invalid username and password" classname="RunTests" time="12.678">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+Scenario: Unsuccessful login with invalid username and password                                      &amp#27;[90m# src/test/resources/features/swaglabs/login.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                                                             &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"invalid_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"invalid_password"&amp#27;[0m                               &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                                                       &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Username and password do not match any user in this service !"&amp#27;[0m &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)
+	at âœ½.I should see an error message "Username and password do not match any user in this service !"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:13)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 19012
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:49:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717364996.293][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful login with valid username and invalid password" classname="RunTests" time="8.971">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+Scenario: Unsuccessful login with valid username and invalid password                                &amp#27;[90m# src/test/resources/features/swaglabs/login.feature:15&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                                                             &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"invalid_password"&amp#27;[0m                              &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                                                       &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Username and password do not match any user in this service !"&amp#27;[0m &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)
+	at âœ½.I should see an error message "Username and password do not match any user in this service !"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:19)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 20185
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:50:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717365005.880][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful login with invalid username and valid password" classname="RunTests" time="8.559">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+Scenario: Unsuccessful login with invalid username and valid password                                &amp#27;[90m# src/test/resources/features/swaglabs/login.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                                                             &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"invalid_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m                                   &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                                                       &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"Username and password do not match any user in this service !"&amp#27;[0m &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)
+	at âœ½.I should see an error message "Username and password do not match any user in this service !"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:25)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 55479
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:50:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717365013.732][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful login with only username" classname="RunTests" time="8.425">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+Scenario: Unsuccessful login with only username            &amp#27;[90m# src/test/resources/features/swaglabs/login.feature:27&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                   &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m    &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                             &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"You need Password !"&amp#27;[0m &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)
+	at âœ½.I should see an error message "You need Password !"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:31)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 41968
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:50:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717365021.233][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful login with only password" classname="RunTests" time="8.2">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+Scenario: Unsuccessful login with only password            &amp#27;[90m# src/test/resources/features/swaglabs/login.feature:33&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                   &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m     &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                             &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"You need Username !"&amp#27;[0m &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)
+	at âœ½.I should see an error message "You need Username !"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 21909
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:50:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717365029.731][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Unsuccessful login with no username and no password" classname="RunTests" time="15.096">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+Scenario: Unsuccessful login with no username and no password         &amp#27;[90m# src/test/resources/features/swaglabs/login.feature:39&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the SauceDemo login page&amp#27;[0m                              &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter username &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                            &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the login button&amp#27;[0m                                        &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see an error message &amp#27;[0m&amp#27;[31m&amp#27;[1m"You need Username & Password !"&amp#27;[0m &amp#27;[90m# swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)
+	at âœ½.I should see an error message "You need Username & Password !"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:43)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 15558
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 03, 2024 4:50:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1717365045.926][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="Successful Logout" classname="RunTests" time="9.329"/>
+  <testcase name="As a user, I want to see all products" classname="RunTests" time="7.471"/>
+  <testcase name="As a user, I want to view more about the company" classname="RunTests" time="17.544"/>
+  <testcase name="As a user, I want to log out" classname="RunTests" time="9.331"/>
+  <testcase name="As a user, I want to clear the cart" classname="RunTests" time="8.739"/>
+  <testcase name="View product listings on the Products page" classname="RunTests" time="7.625"/>
+  <testcase name="Navigating to a product page by clicking the product image" classname="RunTests" time="7.715"/>
+  <testcase name="Navigating to a product page by clicking the product name" classname="RunTests" time="6.606"/>
+  <testcase name="Viewing a unique image for each product" classname="RunTests" time="7.987"/>
+</testsuite>

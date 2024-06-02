@@ -1,0 +1,5050 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3370978200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:44:15.575Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8607882900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Successfully create a user with title \"mr\"",
+        "description": "",
+        "id": "user-api-controller---create-user;successfully-create-a-user-with-title-\"mr\"",
+        "after": [
+          {
+            "result": {
+              "duration": 7728986100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10641400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am authorized with a valid app-id \"665c257a4ff6ee05ceaa8edf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665c257a4ff6ee05ceaa8edf\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1009700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have a user payload with title \"mr\" and other required fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mr\"",
+                  "offset": 33
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithTitleAndOtherRequiredFields(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5107132400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c200\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(CreateUserSteps.java:160)\r\n\tat ✽.I should receive a response with the status code 200(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:10)\r\n",
+              "duration": 22188100,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I should receive a response with the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2023300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:44:40.958Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8131236400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Successfully create a user with firstName \"Johnathan\"",
+        "description": "",
+        "id": "user-api-controller---create-user;successfully-create-a-user-with-firstname-\"johnathan\"",
+        "after": [
+          {
+            "result": {
+              "duration": 7760688400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2023400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am authorized with a valid app-id \"665c257a4ff6ee05ceaa8edf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665c257a4ff6ee05ceaa8edf\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have a user payload with firstName \"Johnathan\" and other required fields",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Johnathan\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithFirstNameAndOtherRequiredFields(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 503366200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c200\u003e\n     but: was \u003c400\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(CreateUserSteps.java:160)\r\n\tat ✽.I should receive a response with the status code 200(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/createUser.feature:16)\r\n",
+              "duration": 1015600,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "I should receive a response with the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5595100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:44:57.433Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6211794200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Fail to create a user with empty email field",
+        "description": "",
+        "id": "user-api-controller---create-user;fail-to-create-a-user-with-empty-email-field",
+        "after": [
+          {
+            "result": {
+              "duration": 2826666200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4044800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am authorized with a valid app-id \"665c257a4ff6ee05ceaa8edf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665c257a4ff6ee05ceaa8edf\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I have a user payload with an empty email field",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithAnEmptyEmailField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 452388700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1040000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should receive a response with the status code 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7543800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should contain an error message \"BODY_NOT_VALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BODY_NOT_VALID\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2006500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:06.995Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5301149600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Fail to create a user with firstName exceeding max length",
+        "description": "",
+        "id": "user-api-controller---create-user;fail-to-create-a-user-with-firstname-exceeding-max-length",
+        "after": [
+          {
+            "result": {
+              "duration": 2421213800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 974900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am authorized with a valid app-id \"665c257a4ff6ee05ceaa8edf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665c257a4ff6ee05ceaa8edf\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I have a user payload with a firstName exceeding max length",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAUserPayloadWithFirstNameExceedingMaxLength()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 495324100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should receive a response with the status code 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the response should contain an error message \"BODY_NOT_VALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BODY_NOT_VALID\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4068700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:15.274Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4868161800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Fail to create a user with invalid app-id",
+        "description": "",
+        "id": "user-api-controller---create-user;fail-to-create-a-user-with-invalid-app-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1496182100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 991500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am authorized with an invalid app-id \"12345678790abc1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678790abc1234567\"",
+                  "offset": 39
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAnInvalidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I have a valid user payload",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iHaveAValidUserPayload()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 367091700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I send a POST request to create the user",
+            "match": {
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iSendAPOSTRequestToCreateTheUser()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I should receive a response with the status code 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 49
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.iShouldReceiveResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 995000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the response should contain an error message \"APP_ID_NOT_EXIST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APP_ID_NOT_EXIST\"",
+                  "offset": 45
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.CreateUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User API Controller - Create User",
+    "description": "",
+    "id": "user-api-controller---create-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apiusercontroller/createUser.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4987600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the API User Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:22.049Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5300450500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Successfully delete a user with a valid and registered ID",
+        "description": "",
+        "id": "user-api-controller---delete-user-by-id;successfully-delete-a-user-with-a-valid-and-registered-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1664626300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2032400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have a valid app-id \"665b2b5479d0282f4782deae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665b2b5479d0282f4782deae\"",
+                  "offset": 22
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 485152500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a DELETE request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a109ff\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a109ff\"",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iSendADELETERequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c200\u003e\n     but: was \u003c404\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveSuccessWithStatusCode(DeleteUserSteps.java:50)\r\n\tat ✽.I should receive success with status code 200(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/deleteUser.feature:9)\r\n",
+              "duration": 1030900,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I should receive success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveSuccessWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the response should display the user id",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.theResponseShouldDisplayTheUserId()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 987400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the API User Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:29.540Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6490214900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Attempt to delete a user with a valid but unregistered ID",
+        "description": "",
+        "id": "user-api-controller---delete-user-by-id;attempt-to-delete-a-user-with-a-valid-but-unregistered-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1883184600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I have a valid app-id \"665b2b5479d0282f4782deae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665b2b5479d0282f4782deae\"",
+                  "offset": 22
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 385255200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I send a DELETE request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a202ca\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a202ca\"",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iSendADELETERequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should receive an error with status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 43
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveAnErrorWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2011200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the response should display an error \"RESOURCE_NOT_FOUND\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RESOURCE_NOT_FOUND\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.theResponseShouldDisplayAnError(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1980800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the API User Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:38.329Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5358449300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Attempt to delete a user with an invalid user ID",
+        "description": "",
+        "id": "user-api-controller---delete-user-by-id;attempt-to-delete-a-user-with-an-invalid-user-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1927087000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I have a valid app-id \"665b2b5479d0282f4782deae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665b2b5479d0282f4782deae\"",
+                  "offset": 22
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAValidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 443539600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I send a DELETE request to \"/user/{id}\" with user ID \"60d0fe4f5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"60d0fe4f5\"",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iSendADELETERequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should receive an error with status code 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 43
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveAnErrorWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the response should display an error \"PARAMS_NOT_VALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PARAMS_NOT_VALID\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.theResponseShouldDisplayAnError(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3997600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the API User Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:46.086Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5463905200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Attempt to delete a user without setting app-id in the header",
+        "description": "",
+        "id": "user-api-controller---delete-user-by-id;attempt-to-delete-a-user-without-setting-app-id-in-the-header",
+        "after": [
+          {
+            "result": {
+              "duration": 2860242300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 936700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I dont have an app-id",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iDontHaveAnAppId()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 406592200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I send a DELETE request to \"/user/{id}\" without app-id and with user ID \"60d0fe4f5311236168a109ff\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a109ff\"",
+                  "offset": 72
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iSendADELETERequestToWithoutAppIdAndWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should receive an error with status code 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 43
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveAnErrorWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1193800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the response should display an error \"APP_ID_MISSING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APP_ID_MISSING\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.theResponseShouldDisplayAnError(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2006700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the API User Controller",
+            "match": {
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:45:54.853Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10130845300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Attempt to delete a user with an invalid app-id in the header",
+        "description": "",
+        "id": "user-api-controller---delete-user-by-id;attempt-to-delete-a-user-with-an-invalid-app-id-in-the-header",
+        "after": [
+          {
+            "result": {
+              "duration": 5291753600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I have an invalid app-id \"662e0effbb70a725c3259220\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"662e0effbb70a725c3259220\"",
+                  "offset": 25
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iHaveAnInvalidAppId(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 373122900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I send a DELETE request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a109ff\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a109ff\"",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iSendADELETERequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should receive an error with status code 403",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 43
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.iShouldReceiveAnErrorWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 976500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the response should display an error \"APP_ID_NOT_EXIST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APP_ID_NOT_EXIST\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.DeleteUserSteps.theResponseShouldDisplayAnError(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User API Controller - Delete User by ID",
+    "description": "",
+    "id": "user-api-controller---delete-user-by-id",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apiusercontroller/deleteUser.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2005100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:46:10.675Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5453174000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Get user with a valid and registered user ID",
+        "description": "",
+        "id": "user-api-controller---get-user-by-id;get-user-with-a-valid-and-registered-user-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1772589800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1001700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have a valid app-id in the header \"665b2b5479d0282f4782deae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665b2b5479d0282f4782deae\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAValidAppIdInTheHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 456236700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a GET request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a109fa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a109fa\"",
+                  "offset": 50
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c200\u003e\n     but: was \u003c404\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)\r\n\tat ✽.I should receive a 200 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:9)\r\n",
+              "duration": 1037100,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I should receive a 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the response should contain the user details",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainTheUserDetails()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1006800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:46:18.394Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6843044300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Get user with a valid but unregistered user ID",
+        "description": "",
+        "id": "user-api-controller---get-user-by-id;get-user-with-a-valid-but-unregistered-user-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1408012400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 984400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have a valid app-id in the header \"60d0fe4f5311236168a109fa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60d0fe4f5311236168a109fa\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAValidAppIdInTheHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 374996500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I send a GET request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a202ca\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a202ca\"",
+                  "offset": 50
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c404\u003e\n     but: was \u003c403\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)\r\n\tat ✽.I should receive a 404 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:15)\r\n",
+              "duration": 2547400,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I should receive a 404 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 19
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "the response should contain an error message about \"RESOURCE_NOT_FOUND\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RESOURCE_NOT_FOUND\"",
+                  "offset": 51
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:46:27.050Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4941636200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Get user with an invalid user ID",
+        "description": "",
+        "id": "user-api-controller---get-user-by-id;get-user-with-an-invalid-user-id",
+        "after": [
+          {
+            "result": {
+              "duration": 1003849300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2577100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I have a valid app-id in the header \"665b2b5479d0282f4782deae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"665b2b5479d0282f4782deae\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAValidAppIdInTheHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 355275300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I send a GET request to \"/user/{id}\" with user ID \"60d0fe4f5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"60d0fe4f5\"",
+                  "offset": 50
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should receive a 400 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 19
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1589000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the response should contain an error message about \"PARAMS_NOT_VALID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PARAMS_NOT_VALID\"",
+                  "offset": 51
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1986600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:46:33.393Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4780068100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Get user without setting app-id in the request header",
+        "description": "",
+        "id": "user-api-controller---get-user-by-id;get-user-without-setting-app-id-in-the-request-header",
+        "after": [
+          {
+            "result": {
+              "duration": 1506931500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1003500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I dont have an app-id in the header",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iDontHaveAppIdInTheHeader()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147825900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I send a GET request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a109fa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a109fa\"",
+                  "offset": 50
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c403\u003e\n     but: was \u003c404\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)\r\n\tat ✽.I should receive a 403 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:27)\r\n",
+              "duration": 991400,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "I should receive a 403 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 19
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "the response should contain an error message about \"APP_ID_MISSING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APP_ID_MISSING\"",
+                  "offset": 51
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5997700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have access to the User API",
+            "match": {
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAccessToTheUserAPI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:46:39.855Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5346629100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Get user with an invalid app-id in the request header",
+        "description": "",
+        "id": "user-api-controller---get-user-by-id;get-user-with-an-invalid-app-id-in-the-request-header",
+        "after": [
+          {
+            "result": {
+              "duration": 1967398000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1034100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I have an invalid app-id in the header \"662e0effbb70a725c3259220\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"662e0effbb70a725c3259220\"",
+                  "offset": 39
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iHaveAnInvalidAppIdInTheHeader(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123681500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I send a GET request to \"/user/{id}\" with user ID \"60d0fe4f5311236168a109fa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/user/{id}\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"60d0fe4f5311236168a109fa\"",
+                  "offset": 50
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iSendAGETRequestToWithUserID(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: \nExpected: \u003c403\u003e\n     but: was \u003c404\u003e\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)\r\n\tat apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(GetUserSteps.java:45)\r\n\tat ✽.I should receive a 403 status code(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/apiusercontroller/getUser.feature:33)\r\n",
+              "duration": 3994000,
+              "status": "failed"
+            },
+            "line": 33,
+            "name": "I should receive a 403 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "403",
+                  "offset": 19
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.iShouldReceiveAStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "the response should contain an error message about \"APP_ID_NOT_EXIST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"APP_ID_NOT_EXIST\"",
+                  "offset": 51
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.GetUserSteps.theResponseShouldContainAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "User API Controller - Get User by ID",
+    "description": "",
+    "id": "user-api-controller---get-user-by-id",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apiusercontroller/getUser.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T21:46:47.338Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5072013900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Successfully update user\u0027s title",
+        "description": "",
+        "id": "user-api-controller---update-user-data;successfully-update-user-s-title",
+        "after": [
+          {
+            "result": {
+              "duration": 1383763800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 181459700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have a user registered on the system",
+            "match": {
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iHaveAUserRegisteredOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 516521200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I update the user with the title to \"miss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"miss\"",
+                  "offset": 36
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iUpdateTheUserWithTheTitleTo(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4004500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should receive a success response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iShouldReceiveASuccessResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2500984900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the title in the response should reflect the update to \"miss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"miss\"",
+                  "offset": 55
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.theTitleInTheResponseShouldReflectTheUpdateTo(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Update"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:46:57.069Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5306127200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Successfully update user\u0027s firstName",
+        "description": "",
+        "id": "user-api-controller---update-user-data;successfully-update-user-s-firstname",
+        "after": [
+          {
+            "result": {
+              "duration": 2392099200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 152871200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I have a user registered on the system",
+            "match": {
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iHaveAUserRegisteredOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 385917200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I update the user with the firstName to \"Suzy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suzy\"",
+                  "offset": 40
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iUpdateTheUserWithTheFirstNameTo(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should receive a success response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iShouldReceiveASuccessResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Update"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:47:05.325Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6591444000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Successfully update user\u0027s lastName",
+        "description": "",
+        "id": "user-api-controller---update-user-data;successfully-update-user-s-lastname",
+        "after": [
+          {
+            "result": {
+              "duration": 936275500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 135131300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I have a user registered on the system",
+            "match": {
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iHaveAUserRegisteredOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453462100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I update the user with the lastName to \"Bae\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bae\"",
+                  "offset": 39
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iUpdateTheUserWithTheLastNameTo(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1004100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should receive a success response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iShouldReceiveASuccessResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Update"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:47:13.458Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5809437400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Successfully update user\u0027s gender",
+        "description": "",
+        "id": "user-api-controller---update-user-data;successfully-update-user-s-gender",
+        "after": [
+          {
+            "result": {
+              "duration": 1667380200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 143394200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I have a user registered on the system",
+            "match": {
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iHaveAUserRegisteredOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 385692300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I update the user with the gender to \"other\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"other\"",
+                  "offset": 37
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iUpdateTheUserWithTheGenderTo(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1002200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should receive a success response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iShouldReceiveASuccessResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Update"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:47:21.483Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4885518700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Successfully update user\u0027s dateOfBirth",
+        "description": "",
+        "id": "user-api-controller---update-user-data;successfully-update-user-s-dateofbirth",
+        "after": [
+          {
+            "result": {
+              "duration": 1514508000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 119229000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I have a user registered on the system",
+            "match": {
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iHaveAUserRegisteredOnTheSystem()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 367662000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I update the user with the dateOfBirth to \"13/05/2003\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"13/05/2003\"",
+                  "offset": 42
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iUpdateTheUserWithTheDateOfBirthTo(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 992700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should receive a success response with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "apiusercontroller.stepdefs.UpdateUserSteps.iShouldReceiveASuccessResponseWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Update"
+          }
+        ]
+      }
+    ],
+    "name": "User API Controller - Update User Data",
+    "description": "",
+    "id": "user-api-controller---update-user-data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/apiusercontroller/updateUser.feature",
+    "tags": [
+      {
+        "name": "@Update",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "I am logged in.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-06-02T21:47:28.389Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5776933400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "As a user, I want to add items to the shopping cart",
+        "description": "",
+        "id": "cart;as-a-user--i-want-to-add-items-to-the-shopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 1200484000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1249240500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2231171500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click the \"Add To Cart\" button next to an item",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iClickTheButtonNextToAnItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 490743400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the item is added to cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.theItemIsAddedToCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "I am logged in.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-06-02T21:47:39.365Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7331321000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "As a user I want to see the contents of my shopping cart",
+        "description": "",
+        "id": "cart;as-a-user-i-want-to-see-the-contents-of-my-shopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 1397128200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1454592200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I\u0027m on the products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.imOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 409250700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iClickOnTheCartIcon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106858200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I want to see the products in my shopping cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iWantToSeeTheCorrectProductsInMyShoppingCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "I am logged in.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-06-02T21:47:50.084Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5219114600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "As a user I want to see the details of the items in my shhopping cart",
+        "description": "",
+        "id": "cart;as-a-user-i-want-to-see-the-details-of-the-items-in-my-shhopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 1293934700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3034133600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I\u0027ve added an item to the cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iVeAddedAnItemToTheCart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 347001000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the cart page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iAmOnTheCartPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 233652000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I want to see the details of the products in my shopping cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iWantToSeeTheDetailsOfTheProductsInMyShoppingCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "I am logged in.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:00.230Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7217237800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "As a user, I want to remove an item from the cart from the products page",
+        "description": "",
+        "id": "cart;as-a-user--i-want-to-remove-an-item-from-the-cart-from-the-products-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1614686900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1235480500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the products page with items in the cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iAmOnTheProductsPageWithItemsInTheCart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150102100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click the remove button in the products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iClickTheRemoveButtonInTheProductsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32259000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Remove item from cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.removeItemFromCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "I am logged in.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:10.499Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5697386600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "As a user, I want to remove an item from the cart from the cart inventory page",
+        "description": "",
+        "id": "cart;as-a-user--i-want-to-remove-an-item-from-the-cart-from-the-cart-inventory-page",
+        "after": [
+          {
+            "result": {
+              "duration": 940082200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1913812200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I am on the cart inventory page with there are item in the cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iAmOnTheCartInventoryPageWithThereAreItemInTheCart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213449400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click the remove button in the cart inventory page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.iClickTheRemoveButtonInTheCartInventoryPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85296200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Remove item from cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CartSteps.removeItemFromCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cart",
+    "description": "",
+    "id": "cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/cart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T21:48:19.365Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4603115000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Checkout from the cart page",
+        "description": "",
+        "id": "checkout;checkout-from-the-cart-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1907727500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 515442700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am viewing the shopping cart",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iAmViewingTheShoppingCart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 459161500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click the Checkout button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iClickTheCheckoutButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81111800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to the Checkout Information page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iGoToTheCheckoutInformationPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:26.948Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4886925700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Submit all shipping details",
+        "description": "",
+        "id": "checkout;submit-all-shipping-details",
+        "after": [
+          {
+            "result": {
+              "duration": 4532533000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 405128300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the Checkout Information page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iAmOnTheCheckoutInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 639506700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill in all shipping details",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iFillInAllShippingDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 210819800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click the Continue button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iClickTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20694500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I go to the Checkout Overview page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iGoToTheCheckoutOverviewPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:37.667Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5273654200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "First name is missing from shipping details",
+        "description": "",
+        "id": "checkout;first-name-is-missing-from-shipping-details",
+        "after": [
+          {
+            "result": {
+              "duration": 1300276800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 160720600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am on the Checkout Information page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iAmOnTheCheckoutInformationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 430800900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I fill in last name",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iFillInLastName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 239911200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I fill in postcode",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iFillInPostcode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175703800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the Continue button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iClickTheContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170683700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I see a \"First Name is required\" error message",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iSeeAFirstNameIsRequiredErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:45.457Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5340864600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Finalise checkout",
+        "description": "",
+        "id": "checkout;finalise-checkout",
+        "after": [
+          {
+            "result": {
+              "duration": 907068400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 470763300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am on the Checkout Overview page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iAmOnTheCheckoutOverviewPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 508896500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I press the Finish button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iPressTheFinishButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115138700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I go to the Checkout Complete page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iGoToTheCheckoutCompletePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:52.818Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4860606000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Edit shipping details from the Checkout Overview page",
+        "description": "",
+        "id": "checkout;edit-shipping-details-from-the-checkout-overview-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1176433300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 394376100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am on the Checkout Overview page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iAmOnTheCheckoutOverviewPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 350153500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I press the Cancel button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iPressTheCancelButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116921900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I go to the Checkout Information page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.CheckoutSteps.iGoToTheCheckoutInformationPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout",
+    "description": "",
+    "id": "checkout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/checkout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 367141000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:48:59.734Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4882623800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "As a user, I want to sort products by name (A-Z)",
+        "description": "",
+        "id": "dashboard;as-a-user--i-want-to-sort-products-by-name-(a-z)",
+        "after": [
+          {
+            "result": {
+              "duration": 1259170800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1055552500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the filter dropdown",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnTheFilterDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143649600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the \"Name (A to Z)\" dropdown option",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnTheNameAToZDropdownOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187344100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The filter option should display \"NAME (A TO Z)\"",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theFilterOptionShouldDisplayNAMEATOZ()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1979611600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The products should be displayed alphabetically, in ascending order",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theProductsShouldBeDisplayedAlphabeticallyInAscendingOrder()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 187188400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:49:09.629Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4900412500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "As a user, I want to sort products by name (Z-A)",
+        "description": "",
+        "id": "dashboard;as-a-user--i-want-to-sort-products-by-name-(z-a)",
+        "after": [
+          {
+            "result": {
+              "duration": 1399413300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 666075300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on the filter dropdown",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnTheFilterDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 151178900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on the \"Name (Z to A)\" dropdown option",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnTheNameZToADropdownOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98875400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The filter option should display \"NAME (Z TO A)\"",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theFilterOptionShouldDisplayNAMEZTOA()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1940081900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The products should be displayed alphabetically, in descending order",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theProductsShouldBeDisplayedAlphabeticallyInDescendingOrder()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 392692500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:49:18.996Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4621988300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "As a user, I want to sort products by price (low-high)",
+        "description": "",
+        "id": "dashboard;as-a-user--i-want-to-sort-products-by-price-(low-high)",
+        "after": [
+          {
+            "result": {
+              "duration": 1131018800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 414751200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on the filter dropdown",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnTheFilterDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169939100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on \"Price (low to high)\" dropdown option",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnPriceLowToHighDropdownOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229942400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The filter option should display \"PRICE (LOW TO HIGH)\"",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theFilterOptionShouldDisplayPRICELOWTOHIGH()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1887717100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The products should be displayed by price, in ascending order",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theProductsShouldBeDisplayedByPriceInAscendingOrder()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 412902900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:49:27.862Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4322388400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "As a user, I want to sort products by price (high-low)",
+        "description": "",
+        "id": "dashboard;as-a-user--i-want-to-sort-products-by-price-(high-low)",
+        "after": [
+          {
+            "result": {
+              "duration": 1782799500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 470262700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on the filter dropdown",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnTheFilterDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175601400,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I click on \"Price (high to low)\" dropdown option",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.iClickOnPriceHighToLowDropdownOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78232800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The filter option should display \"PRICE (HIGH TO LOW)\"",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theFilterOptionShouldDisplayPRICEHIGHTOLOW()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1738816800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The products should be displayed by price, in descending order",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.DashboardSteps.theProductsShouldBeDisplayedByPriceInDescendingOrder()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Dashboard",
+    "description": "",
+    "id": "dashboard",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/dashboard.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T21:49:36.863Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5790917300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Successful login with valid username and password",
+        "description": "",
+        "id": "login;successful-login-with-valid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1052327900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 447384600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 513718100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 46
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 326546600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91296500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be redirected to the products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldBeRedirectedToTheProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:49:45.105Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7733890200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Unsuccessful login with invalid username and password",
+        "description": "",
+        "id": "login;unsuccessful-login-with-invalid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1772591500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 420153100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1489934100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter username \"invalid_user\" and password \"invalid_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"invalid_password\"",
+                  "offset": 45
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1105664800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)\r\n\tat ✽.I should see an error message \"Username and password do not match any user in this service !\"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:13)\r\n",
+              "duration": 139796800,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I should see an error message \"Username and password do not match any user in this service !\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service !\"",
+                  "offset": 30
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:49:57.784Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6610947000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Unsuccessful login with valid username and invalid password",
+        "description": "",
+        "id": "login;unsuccessful-login-with-valid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1132442500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 374260000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 510923000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter username \"standard_user\" and password \"invalid_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"invalid_password\"",
+                  "offset": 46
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189876900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)\r\n\tat ✽.I should see an error message \"Username and password do not match any user in this service !\"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:19)\r\n",
+              "duration": 136284400,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "I should see an error message \"Username and password do not match any user in this service !\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service !\"",
+                  "offset": 30
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:50:06.756Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5197955600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Unsuccessful login with invalid username and valid password",
+        "description": "",
+        "id": "login;unsuccessful-login-with-invalid-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1764602500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 519480200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 770698200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter username \"invalid_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalid_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 45
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165398300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)\r\n\tat ✽.I should see an error message \"Username and password do not match any user in this service !\"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:25)\r\n",
+              "duration": 122121300,
+              "status": "failed"
+            },
+            "line": 25,
+            "name": "I should see an error message \"Username and password do not match any user in this service !\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Username and password do not match any user in this service !\"",
+                  "offset": 30
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:50:15.314Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4459193900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Unsuccessful login with only username",
+        "description": "",
+        "id": "login;unsuccessful-login-with-only-username",
+        "after": [
+          {
+            "result": {
+              "duration": 2763771300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 416734800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 474352500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I enter username \"standard_user\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 46
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165895400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)\r\n\tat ✽.I should see an error message \"You need Password !\"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:31)\r\n",
+              "duration": 127373600,
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "I should see an error message \"You need Password !\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You need Password !\"",
+                  "offset": 30
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:50:23.739Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4805846500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Unsuccessful login with only password",
+        "description": "",
+        "id": "login;unsuccessful-login-with-only-password",
+        "after": [
+          {
+            "result": {
+              "duration": 2341867300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 366874100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393099700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I enter username \"\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 33
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 158546300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)\r\n\tat ✽.I should see an error message \"You need Username !\"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:37)\r\n",
+              "duration": 116439900,
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "I should see an error message \"You need Username !\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You need Username !\"",
+                  "offset": 30
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:50:31.939Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12397933000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Unsuccessful login with no username and no password",
+        "description": "",
+        "id": "login;unsuccessful-login-with-no-username-and-no-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1348098500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 461271400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I am on the SauceDemo login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iAmOnTheSauceDemoLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 547092100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I enter username \"\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iEnterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179245000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click the login button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(LoginSteps.java:46)\r\n\tat ✽.I should see an error message \"You need Username \u0026 Password !\"(file:///C:/Users/novia/OneDrive/Documents/Final-Project-Testing/src/test/resources/features/swaglabs/login.feature:43)\r\n",
+              "duration": 144277000,
+              "status": "failed"
+            },
+            "line": 43,
+            "name": "I should see an error message \"You need Username \u0026 Password !\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You need Username \u0026 Password !\"",
+                  "offset": 30
+                }
+              ],
+              "location": "swaglabs.cucumber.stepdefs.LoginSteps.iShouldSeeAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T21:50:47.037Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4700243200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Successful Logout",
+        "description": "",
+        "id": "logout;successful-logout",
+        "after": [
+          {
+            "result": {
+              "duration": 2558549900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1540122100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in to the application",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LogoutSteps.iAmLoggedInToTheApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213576300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the menu button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LogoutSteps.iClickOnTheMenuButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 285981400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the logout button",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LogoutSteps.iClickOnTheLogoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13582700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.LogoutSteps.iShouldBeRedirectedToTheLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Logout",
+    "description": "",
+    "id": "logout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/logout.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-02T21:50:56.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4669352700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "As a user, I want to see all products",
+        "description": "",
+        "id": "menu;as-a-user--i-want-to-see-all-products",
+        "after": [
+          {
+            "result": {
+              "duration": 1830923300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 448079300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.theUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 199510400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the burger menu",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickOnTheBurgerMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293187300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the All Items link",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickTheAllItemsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14611000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am redirected to the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iAmRedirectedToTheProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:51:03.837Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4674663100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "As a user, I want to view more about the company",
+        "description": "",
+        "id": "menu;as-a-user--i-want-to-view-more-about-the-company",
+        "after": [
+          {
+            "result": {
+              "duration": 3974718600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 628204600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am logged in",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.theUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 268624800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the burger menu",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickOnTheBurgerMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7400835400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click the About link",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickTheAboutLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 581927300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am redirected to saucelabs.com",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iAmRedirectedToSaucelabsCom()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:51:21.380Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7273287900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "As a user, I want to log out",
+        "description": "",
+        "id": "menu;as-a-user--i-want-to-log-out",
+        "after": [
+          {
+            "result": {
+              "duration": 1003580300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 324918300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am logged in",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.theUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 356272800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on the burger menu",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickOnTheBurgerMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 310839100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on the log out link",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickOnTheLogOutLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48537400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am logged out and redirected to the log in page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iAmLoggedOutAndRedirectedToTheLogInPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:51:30.711Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4739786000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "As a user, I want to clear the cart",
+        "description": "",
+        "id": "menu;as-a-user--i-want-to-clear-the-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 2916622300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 433115400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am logged in",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.theUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 194880400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on the burger menu",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickOnTheBurgerMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 393775900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click on Reset App State link",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.iClickOnResetAppStateLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48644000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "All items in the cart are removed",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.MenuSteps.allItemsInTheCartAreRemoved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Menu",
+    "description": "",
+    "id": "menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/menu.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 198081000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:51:39.451Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4604187500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "View product listings on the Products page",
+        "description": "",
+        "id": "view-products;view-product-listings-on-the-products-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1148419900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1659647500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see a list of products on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iSeeAListOfProductsOnTheProductsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 622070100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:51:47.076Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5389119800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Navigating to a product page by clicking the product image",
+        "description": "",
+        "id": "view-products;navigating-to-a-product-page-by-clicking-the-product-image",
+        "after": [
+          {
+            "result": {
+              "duration": 1080662500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "There is at least one product on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.thereIsAtLeastOneProductOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 595822000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the product image",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iClickOnTheProductImage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13580900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I go to the product page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iGoToTheProductPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 200470200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:51:54.791Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4728129300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Navigating to a product page by clicking the product name",
+        "description": "",
+        "id": "view-products;navigating-to-a-product-page-by-clicking-the-product-name",
+        "after": [
+          {
+            "result": {
+              "duration": 1103764600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "There is at least one product on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.thereIsAtLeastOneProductOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 534202600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on the product name",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iClickOnTheProductName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24721600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I go to the product page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iGoToTheProductPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 126690100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Products page",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iAmOnTheProductsPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-02T21:52:01.396Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4976343100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Viewing a unique image for each product",
+        "description": "",
+        "id": "view-products;viewing-a-unique-image-for-each-product",
+        "after": [
+          {
+            "result": {
+              "duration": 946584200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.StepDefManager.teardownAll()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1925014300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I see a unique image for each product",
+            "match": {
+              "location": "swaglabs.cucumber.stepdefs.ViewProductsSteps.iSeeAUniqueImageForEachProduct()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "View products",
+    "description": "",
+    "id": "view-products",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/swaglabs/viewProducts.feature",
+    "tags": []
+  }
+]

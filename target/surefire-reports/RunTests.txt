@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: RunTests
+-------------------------------------------------------------------------------
+Tests run: 50, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 476.486 s <<< FAILURE! - in RunTests
+Successfully create a user with title "mr"  Time elapsed: 26.758 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <400>
+
+Successfully create a user with firstName "Johnathan"  Time elapsed: 16.581 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <400>
+
+Successfully delete a user with a valid and registered ID  Time elapsed: 7.501 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <404>
+
+Get user with a valid and registered user ID  Time elapsed: 7.72 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <200>
+     but: was <404>
+
+Get user with a valid but unregistered user ID  Time elapsed: 8.654 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <404>
+     but: was <403>
+
+Get user without setting app-id in the request header  Time elapsed: 6.476 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <403>
+     but: was <404>
+
+Get user with an invalid app-id in the request header  Time elapsed: 7.477 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: <403>
+     but: was <404>
+
+Unsuccessful login with invalid username and password  Time elapsed: 12.678 s  <<< FAILURE!
+java.lang.AssertionError
+
+Unsuccessful login with valid username and invalid password  Time elapsed: 8.971 s  <<< FAILURE!
+java.lang.AssertionError
+
+Unsuccessful login with invalid username and valid password  Time elapsed: 8.559 s  <<< FAILURE!
+java.lang.AssertionError
+
+Unsuccessful login with only username  Time elapsed: 8.425 s  <<< FAILURE!
+java.lang.AssertionError
+
+Unsuccessful login with only password  Time elapsed: 8.2 s  <<< FAILURE!
+java.lang.AssertionError
+
+Unsuccessful login with no username and no password  Time elapsed: 15.096 s  <<< FAILURE!
+java.lang.AssertionError
+
