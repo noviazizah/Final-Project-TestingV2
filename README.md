@@ -232,3 +232,47 @@ Proyek ini terdiri dari dua jenis pengujian otomatis:
 | 6.0.3 | - | Test navigation to the login page when the user selects the "Logout" menu from the sidebar | 1. The application is open<br>2. The dashboard page is displayed<br>3. The user has clicked the sidebar menu icon | The user clicks the "About" menu | - | The application interface navigates to the login page |
 | 6.0.4 | - | Test navigation to the login page when the user selects the "Logout" menu from the sidebar | 1. The application is open<br>2. The dashboard page is displayed<br>3. The user has clicked the sidebar menu icon | The user Menu "Reset App" | - | The application interface navigates to the dashboard page and the cart is emptied |
 
+
+# API User Controller Test Design
+
+API User Controller adalah bagian dari website https://dummyapi.io yang menyediakan data pengguna untuk pengujian dan pengembangan. Pengujian ini memastikan bahwa semua endpoint API (GET, POST, PUT, DELETE) berfungsi sesuai spesifikasi.
+
+## 1.0 Create User
+
+| Test Case ID | Case Type | Test Case Name | Precondition | Steps to Execute | Test Data | Expected Result |
+|-------------|----------|--------------|-------------|--------------|----------|--------------|
+| 1.0.1 | Positif | Input data valid dengan field title "mr" | 1. App-id valid dari DUMMYAPI<br>2. POSTMAN terbuka<br>3. Header berisi app-id | 1. Pilih POST<br>2. Masukkan URL create user<br>3. Masukkan data user JSON<br>4. Klik send | App-id: 665c257a4ff6ee05ceaa8edf<br>JSON: `{"title":"mr","firstName":"Alex","lastName":"Gonzales",...}` | 1. JSON data user ditambahkan<br>2. Status 200 OK<br>3. Data user bertambah |
+| 1.0.2 | Positif | Input data valid, firstName length 2-50 | 1. App-id valid dari DUMMYAPI<br>2. POSTMAN terbuka<br>3. Header berisi app-id | 1. Pilih POST<br>2. Masukkan URL create user<br>3. Masukkan data user JSON<br>4. Klik send | App-id: 662718606cae037669dee7b6<br>JSON: `{"title":"mr","firstName":"Johnathan","lastName":"Doe",...}` | 1. JSON data user ditambahkan<br>2. Status 200 OK<br>3. Data user bertambah |
+| 1.0.3 | Negatif | Input data tanpa field email | 1. App-id valid dari DUMMYAPI<br>2. POSTMAN terbuka<br>3. Header berisi app-id | 1. Pilih POST<br>2. Masukkan URL create user<br>3. Masukkan data user JSON<br>4. Klik send | App-id: 662718606cae037669dee7b6<br>JSON: `{"title":"mrs","firstName":"Felicya","lastName":"Vernede","email":"",...}` | 1. BODY NOT VALID<br>2. Status 400 Bad Request<br>3. Data user tidak bertambah |
+| 1.0.4 | Negatif | Input firstName > 50 karakter | 1. App-id valid dari DUMMYAPI<br>2. POSTMAN terbuka<br>3. Header berisi app-id | 1. Pilih POST<br>2. Masukkan URL create user<br>3. Masukkan data user JSON<br>4. Klik send | App-id: 662718606cae037669dee7b6<br>JSON: `{"firstName":"MichaelMichael...","lastName":"Brown",...}` | 1. BODY NOT VALID<br>2. Status 400 Bad Request<br>3. Data user tidak bertambah |
+| 1.0.5 | Negatif | Input data dengan app-id invalid | 1. POSTMAN terbuka | 1. Pilih POST<br>2. Masukkan URL create user<br>3. Klik send | App-id: 12345678790abc1234567<br>JSON: `{"firstName":"Grace","lastName":"Madison",...}` | 1. APP ID NOT EXIST<br>2. Status 403 Forbidden<br>3. Data user tidak bertambah |
+
+## 2.0 Get User
+
+| Test Case ID | Case Type | Test Case Name | Precondition | Steps to Execute | Test Data | Expected Result |
+|-------------|----------|--------------|-------------|--------------|----------|--------------|
+| 2.0.1 | Positif | Get user by id dengan id valid & terdaftar | 1. POSTMAN terbuka<br>2. Method GET | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5311236168a109cb<br>app-id: 662e0effbb70a725c32592e9 | 1. Status 200 OK<br>2. JSON Data User ditampilkan<br>3. Database tidak berubah |
+| 2.0.2 | Negatif | Get user by id dengan id valid tapi tidak terdaftar | 1. POSTMAN terbuka<br>2. Method GET | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5311236168a202ca<br>app-id: 662e0effbb70a725c32592e9 | 1. Status 404 Not Found<br>2. Error: "RESOURCE_NOT_FOUND"<br>3. Database tidak berubah |
+| 2.0.3 | Negatif | Get user by id dengan id tidak valid | 1. POSTMAN terbuka<br>2. Method GET | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5<br>app-id: 662e0effbb70a725c32592e9 | 1. Status 400 Bad Request<br>2. Error: "PARAMS_NOT_VALID"<br>3. Database tidak berubah |
+| 2.0.4 | Negatif | Get user by id tanpa app-id | 1. POSTMAN terbuka<br>2. Method GET | 1. Masukkan endpoint<br>2. Masukkan id user<br>3. Klik Send | id: 60d0fe4f5311236168a109cb | 1. Status 403 Forbidden<br>2. Error: "APP_ID_MISSING"<br>3. Database tidak berubah |
+| 2.0.5 | Negatif | Get user by id dengan app-id tidak valid | 1. POSTMAN terbuka<br>2. Method GET | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5311236168a109cb<br>app-id: 662e0effbb70a725c3259220 | 1. Status 403 Forbidden<br>2. Error: "APP_ID_NOT_EXIST"<br>3. Database tidak berubah |
+
+## 3.0 Update User
+
+| Test Case ID | Case Type | Test Case Name | Precondition | Steps to Execute | Test Data | Expected Result |
+|-------------|----------|--------------|-------------|--------------|----------|--------------|
+| 3.0.1 | Positif | Update field 'title' | 1. App-id di header<br>2. Method PUT<br>3. ID valid tersedia | 1. Request PUT ke endpoint<br>2. Masukkan data JSON<br>3. Klik SEND | app-id: 66271b536cae0377a3dee7c6<br>id: 60d0fe4f5311236168a109ca<br>JSON: `{"title":"miss"}` | 1. Status 200 OK<br>2. JSON: `{"id":"60d0fe4f5311236168a109ca","title":"miss",...}`<br>3. Field title berubah |
+| 3.0.2 | Positif | Update field 'firstName' | 1. App-id di header<br>2. Method PUT<br>3. ID valid tersedia | 1. Request PUT ke endpoint<br>2. Masukkan data JSON<br>3. Klik SEND | app-id: 66271b536cae0377a3dee7c6<br>id: 60d0fe4f5311236168a109ca<br>JSON: `{"firstName":"Suzy"}` | 1. Status 200 OK<br>2. JSON: `{"firstName":"Suzy",...}`<br>3. Field firstName berubah |
+| 3.0.3 | Positif | Update field 'lastName' | 1. App-id di header<br>2. Method PUT<br>3. ID valid tersedia | 1. Request PUT ke endpoint<br>2. Masukkan data JSON<br>3. Klik SEND | app-id: 66271b536cae0377a3dee7c6<br>id: 60d0fe4f5311236168a109ca<br>JSON: `{"lastName":"Bae"}` | 1. Status 200 OK<br>2. JSON: `{"lastName":"Bae",...}`<br>3. Field lastName berubah |
+| 3.0.4 | Positif | Update field 'gender' | 1. App-id di header<br>2. Method PUT<br>3. ID valid tersedia | 1. Request PUT ke endpoint<br>2. Masukkan data JSON<br>3. Klik SEND | app-id: 66271b536cae0377a3dee7c6<br>id: 60d0fe4f5311236168a109ca<br>JSON: `{"gender":"other"}` | 1. Status 200 OK<br>2. JSON: `{"gender":"other",...}`<br>3. Field gender berubah |
+| 3.0.5 | Positif | Update field 'dateOfBirth' | 1. App-id di header<br>2. Method PUT<br>3. ID valid tersedia | 1. Request PUT ke endpoint<br>2. Masukkan data JSON<br>3. Klik SEND | app-id: 66271b536cae0377a3dee7c6<br>id: 60d0fe4f5311236168a109ca<br>JSON: `{"dateOfBirth":"13/05/2003"}` | 1. Status 200 OK<br>2. JSON: `{"dateOfBirth":"13/05/2003",...}`<br>3. Field dateOfBirth berubah |
+
+## 4.0 Delete User
+
+| Test Case ID | Case Type | Test Case Name | Precondition | Steps to Execute | Test Data | Expected Result |
+|-------------|----------|--------------|-------------|--------------|----------|--------------|
+| 4.0.1 | Positif | Delete user dengan id valid & terdaftar | 1. POSTMAN terbuka<br>2. Method DELETE | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5311236168a109cc<br>app-id: 662e0effbb70a725c32592e9 | 1. Status 200 OK<br>2. ID User yang dihapus ditampilkan<br>3. Data user terhapus dari database |
+| 4.0.2 | Negatif | Delete user dengan id valid tapi tidak terdaftar | 1. POSTMAN terbuka<br>2. Method DELETE | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5311236168a109d4<br>app-id: 662e0effbb70a725c32592e9 | 1. Status 404 Not Found<br>2. Error: "RESOURCE_NOT_FOUND"<br>3. Database tidak berubah |
+| 4.0.3 | Negatif | Delete user dengan id tidak valid | 1. POSTMAN terbuka<br>2. Method DELETE | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5<br>app-id: 662e0effbb70a725c32592e9 | 1. Status 400 Bad Request<br>2. Error: "PARAMS_NOT_VALID"<br>3. Database tidak berubah |
+| 4.0.4 | Negatif | Delete user tanpa app-id | 1. POSTMAN terbuka<br>2. Method DELETE | 1. Masukkan endpoint<br>2. Masukkan id user<br>3. Klik Send | id: 60d0fe4f5311236168a109d4 | 1. Status 403 Forbidden<br>2. Error: "APP_ID_MISSING"<br>3. Database tidak berubah |
+| 4.0.5 | Negatif | Delete user dengan app-id tidak valid | 1. POSTMAN terbuka<br>2. Method DELETE | 1. Masukkan endpoint<br>2. Masukkan app-id<br>3. Masukkan id user<br>4. Klik Send | id: 60d0fe4f5311236168a109d4<br>app-id: 662e0effbb70a725c3259220 | 1. Status 403 Forbidden<br>2. Error: "APP_ID_NOT_EXIST"<br>3. Database tidak berubah |
