@@ -112,6 +112,44 @@ Adapun struktur projek yang diterapkan adalah sebagai berikut:
 
 ```
 
+Proyek ini terdiri dari dua jenis pengujian otomatis:
+
+1. Pengujian API (apiusercontroller):
+   - `src/test/java/apiusercontroller/stepdefs`: Berisi file-file step definition untuk pengujian API, menerjemahkan langkah-langkah Gherkin menjadi kode Java. Ada empat file untuk operasi CRUD pada user:
+     - `CreateUserSteps.java`
+     - `DeleteUserSteps.java`
+     - `GetUserSteps.java`
+     - `UpdateUserSteps.java`
+   - `src/test/resources/features/apiusercontroller`: Berisi file-file `.feature` dalam bahasa Gherkin, menjelaskan skenario pengujian dalam format "Given-When-Then".
+
+2. Pengujian Web (swaglabs):
+   - `src/test/java/swaglab/cucumber/stepdefs`: Berisi file-file step definition untuk pengujian web Swag Labs:
+     - `AddToCartSteps.java`: Menambahkan produk ke keranjang
+     - `CheckoutSteps.java`: Proses checkout
+     - `FilterProductSteps.java`: Menyaring produk
+     - `FooterSteps.java`: Pengujian footer
+     - `HamburgerMenuSteps.java`: Menu hamburger
+     - `LoginSteps.java`: Proses login
+     - `RemoveFromCartSteps.java`: Menghapus dari keranjang
+     - `ViewCartSteps.java`: Melihat keranjang
+     - `ViewProductSteps.java`: Melihat detail produk
+     - `StepDefManager.java`: Mengelola step definition
+   - `src/test/java/swaglab/pom`: Menggunakan Page Object Model (POM) untuk memisahkan logika halaman dan pengujian.
+   - `src/test/resources/features/swaglabs`: Berisi file-file `.feature` sesuai dengan step definition.
+
+3. Target Folder:
+   - `target`: Tempat Maven menyimpan hasil kompilasi, laporan, dan artefak.
+   - `target/classes` dan `target/test-classes`: File `.class` hasil kompilasi.
+   - `target/maven-status`: Status build Maven.
+   - `target/surefire-reports`: Laporan JUnit XML.
+   - `target/jsonReport.json`: Laporan Cucumber dalam format JSON.
+   - `target/testReport.html`: File HTML interaktif dari laporan Cucumber, menampilkan:
+     - Ringkasan pengujian (lulus, gagal, dilewati)
+     - Daftar skenario dengan status
+     - Detail setiap langkah
+     - Screenshot untuk kegagalan web (jika dikonfigurasi)
+     - Waktu eksekusi dan info lainnya
+     
 ## Instalasi Project
 
 Langkah-langkah untuk menginstal proyek ini pada lingkungan lokal:
