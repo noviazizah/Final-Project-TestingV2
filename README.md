@@ -47,7 +47,7 @@ git clone https://github.com/noviazizah/Final-Project-TestingV2.git
 ```
 2. Masuk ke direktori proyek:
 ```
-cd Final-Project-Testing
+cd Final-Project-TestingV2
 ```
 3. Jalankan pengujian dengan Maven:
 
