@@ -43,7 +43,7 @@ Langkah-langkah untuk menginstal proyek ini pada lingkungan lokal:
 
 1. Clone repository ini
 ```
-git clone https://github.com/noviazizah/Final-Project-Testing.git
+git clone https://github.com/noviazizah/Final-Project-TestingV2.git
 ```
 2. Masuk ke direktori proyek:
 ```
